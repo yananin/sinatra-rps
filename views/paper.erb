@@ -1,0 +1,16 @@
+  <div >
+    <div><a href="/rock">Play Rock</a></div>
+    <div><a href="/paper">Play Paper</a></div>
+    <div><a href="/scissors">Play Scissors</a></div>
+  </div>
+
+<p><strong>We played paper!</strong></p>
+<p><strong> They played <%= @option %>! </strong></p>
+<% if @option == "paper" %>
+  <p><strong>We tied!</strong></p>
+<% elsif @option == "scissors" %>
+  <p><strong>We lost!</strong><p>
+<% else %>
+  <p><strong>We won!</strong></p>
+<% end %>
+ <div ><div><a href="/">Rules</a></div></div>
